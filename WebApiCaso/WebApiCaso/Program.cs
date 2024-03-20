@@ -1,13 +1,8 @@
 using MongoDB.Driver;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Users.Model;
+using WebApiCaso.Models;
 using Seed.Data;
-using Iniciatives.Model;
-
+using WebApiCaso.Services;
 var builder = WebApplication.CreateBuilder(args);
-
-
 var config = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory()) // Establece la ruta base para buscar el archivo appsettings.json
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true); // Carga el archivo appsettings.json
@@ -18,57 +13,42 @@ var mongoClient = new MongoClient(Configuration["MongoDbSettings:ConnectionStrin
 var database = mongoClient.GetDatabase("Caso");
 builder.Services.AddSingleton<IMongoDatabase>(database);
 
+// Colecciones
 var users = database.GetCollection<User>("Users");
 var iniciatives = database.GetCollection<Iniciative>("Iniciatives");
 
+// Añadir seed
 
 if (users.EstimatedDocumentCount() == 0)
 {
     users.InsertMany(SeedData.Users);
     Console.WriteLine("Datos sembrados exitosamente.");
 }
+
+// Añadir Serivicios
+builder.Services.AddSingleton<UserService>();
+builder.Services.AddSingleton<IniciativeService>();
+
 // Add services to the container.
+
+builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllers();
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment() && true)
+if (app.Environment.IsDevelopment() || true)
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
+app.UseAuthorization();
+app.UseRouting();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
