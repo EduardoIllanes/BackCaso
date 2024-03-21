@@ -52,9 +52,19 @@ internal class Program
         //app.UseHttpsRedirection();
         app.UseAuthorization();
         app.UseRouting();
-
+        app.UseCors("AllowOrigin");
         app.MapControllers();
 
         app.Run();
+    }
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddCors(options =>
+        {
+            options.AddPolicy(name: "AllowOrigin", builder =>
+            {
+                builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
+            });
+        });
     }
 }

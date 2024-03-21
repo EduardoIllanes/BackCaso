@@ -4,11 +4,13 @@ using System.Security.Cryptography.X509Certificates;
 using WebApiCaso.Services;
 using WebApiCaso.Models;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 
 namespace WebApiCaso.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [EnableCors("AllowOrigin")]
     public class UserController : ControllerBase
     {
         private readonly UserService _usersService;

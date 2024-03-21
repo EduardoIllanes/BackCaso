@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using WebApiCaso.Models;
 using WebApiCaso.Services;
 
@@ -6,6 +7,7 @@ namespace WebApiCaso.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [EnableCors("AllowOrigin")]
     public class IniciativesController : Controller
     {
         private readonly IniciativeService _iniciativesService;
