@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography.X509Certificates;
 using WebApiCaso.Services;
 using WebApiCaso.Models;
+using System.Threading.Tasks;
 
 namespace WebApiCaso.Controllers
 {
@@ -21,6 +22,11 @@ namespace WebApiCaso.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(User newUser)
         {
+            var existingUser = await _usersService.GetByNameAsync(newUser.Name);
+            if (existingUser != null)
+            {
+                return BadRequest("Ya existe un usuario con el mismo nombre");
+            }
             await _usersService.CreateAsync(newUser);
 
             return CreatedAtAction(nameof(Get), new { id = newUser.Id }, newUser);

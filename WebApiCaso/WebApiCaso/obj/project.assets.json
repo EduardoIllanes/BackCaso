@@ -1288,23 +1288,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eduardo.illanes\\.nuget\\packages\\": {},
+    "C:\\Users\\jose.morales\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduardo.illanes\\Documents\\GitHub\\BackCaso\\WebApiCaso\\WebApiCaso\\WebApiCaso.csproj",
+      "projectUniqueName": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\WebApiCaso.csproj",
       "projectName": "WebApiCaso",
-      "projectPath": "C:\\Users\\eduardo.illanes\\Documents\\GitHub\\BackCaso\\WebApiCaso\\WebApiCaso\\WebApiCaso.csproj",
-      "packagesPath": "C:\\Users\\eduardo.illanes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduardo.illanes\\Documents\\GitHub\\BackCaso\\WebApiCaso\\WebApiCaso\\obj\\",
+      "projectPath": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\WebApiCaso.csproj",
+      "packagesPath": "C:\\Users\\jose.morales\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\eduardo.illanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jose.morales\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1313,6 +1313,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1372,7 +1373,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

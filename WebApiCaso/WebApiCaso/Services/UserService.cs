@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using WebApiCaso.Models;
 
 namespace WebApiCaso.Services
@@ -18,10 +19,15 @@ namespace WebApiCaso.Services
         public async Task<List<User>> GetAsync() =>
             await _usersCollection.Find(_ => true).ToListAsync();
 
-        public async Task CreateAsync(User newUser) =>
+        public async Task CreateAsync(User newUser)
+        {
+            newUser.Id = ObjectId.GenerateNewId();
             await _usersCollection.InsertOneAsync(newUser);
-
-
+        }
+        public async Task<User> GetByNameAsync(string name)
+        {
+            return await _usersCollection.Find(u => u.Name == name).FirstOrDefaultAsync();
+        }
 
     }
 

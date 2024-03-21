@@ -22,7 +22,7 @@ namespace WebApiCaso.Models
             [BsonElement("LikesList")]
             public List<ObjectId> LikesList { get; set; }
 
-        [BsonElement("UserCreatorId")]
+            [BsonElement("UserCreatorId")]
             public ObjectId UserCreatorId { get; set; }
         }
 }

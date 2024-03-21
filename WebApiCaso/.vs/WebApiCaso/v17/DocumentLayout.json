@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|c:\\users\\jose.morales\\desktop\\backcaso\\webapicaso\\webapicaso\\models\\user.model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|solutionrelative:webapicaso\\models\\user.model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|c:\\users\\jose.morales\\desktop\\backcaso\\webapicaso\\webapicaso\\controllers\\iniciatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|solutionrelative:webapicaso\\controllers\\iniciatives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|c:\\users\\jose.morales\\desktop\\backcaso\\webapicaso\\webapicaso\\models\\iniciatives.model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|solutionrelative:webapicaso\\models\\iniciatives.model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|c:\\users\\jose.morales\\desktop\\backcaso\\webapicaso\\webapicaso\\controllers\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|solutionrelative:webapicaso\\controllers\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jose.morales\\AppData\\Local\\SourceServer\\e91ee367383703ac98f56c5fd4813a576b3887d196f0162217877abcaed94380\\WebApiCaso\\WebApiCaso\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|c:\\users\\jose.morales\\desktop\\backcaso\\webapicaso\\webapicaso\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|solutionrelative:webapicaso\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|c:\\users\\jose.morales\\desktop\\backcaso\\webapicaso\\webapicaso\\services\\iniciativeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF2CE0F2-D252-4969-8250-27CB43A46F47}|WebApiCaso\\WebApiCaso.csproj|solutionrelative:webapicaso\\services\\iniciativeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.Model.cs",
+              "DocumentMoniker": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Models\\User.Model.cs",
+              "RelativeDocumentMoniker": "WebApiCaso\\Models\\User.Model.cs",
+              "ToolTip": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Models\\User.Model.cs",
+              "RelativeToolTip": "WebApiCaso\\Models\\User.Model.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T23:39:59.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Controllers\\Users.cs",
+              "RelativeDocumentMoniker": "WebApiCaso\\Controllers\\Users.cs",
+              "ToolTip": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Controllers\\Users.cs",
+              "RelativeToolTip": "WebApiCaso\\Controllers\\Users.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T23:33:32.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "WebApiCaso\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Services\\UserService.cs",
+              "RelativeToolTip": "WebApiCaso\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T23:22:11.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jose.morales\\AppData\\Local\\SourceServer\\e91ee367383703ac98f56c5fd4813a576b3887d196f0162217877abcaed94380\\WebApiCaso\\WebApiCaso\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\e91ee367383703ac98f56c5fd4813a576b3887d196f0162217877abcaed94380\\WebApiCaso\\WebApiCaso\\Program.cs",
+              "ToolTip": "C:\\Users\\jose.morales\\AppData\\Local\\SourceServer\\e91ee367383703ac98f56c5fd4813a576b3887d196f0162217877abcaed94380\\WebApiCaso\\WebApiCaso\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\e91ee367383703ac98f56c5fd4813a576b3887d196f0162217877abcaed94380\\WebApiCaso\\WebApiCaso\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvxUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T22:55:18.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Iniciatives.Model.cs",
+              "DocumentMoniker": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Models\\Iniciatives.Model.cs",
+              "RelativeDocumentMoniker": "WebApiCaso\\Models\\Iniciatives.Model.cs",
+              "ToolTip": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Models\\Iniciatives.Model.cs",
+              "RelativeToolTip": "WebApiCaso\\Models\\Iniciatives.Model.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T22:48:48.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Iniciatives.cs",
+              "DocumentMoniker": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Controllers\\Iniciatives.cs",
+              "RelativeDocumentMoniker": "WebApiCaso\\Controllers\\Iniciatives.cs",
+              "ToolTip": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Controllers\\Iniciatives.cs",
+              "RelativeToolTip": "WebApiCaso\\Controllers\\Iniciatives.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T22:42:50.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IniciativeService.cs",
+              "DocumentMoniker": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Services\\IniciativeService.cs",
+              "RelativeDocumentMoniker": "WebApiCaso\\Services\\IniciativeService.cs",
+              "ToolTip": "C:\\Users\\jose.morales\\Desktop\\BackCaso\\WebApiCaso\\WebApiCaso\\Services\\IniciativeService.cs",
+              "RelativeToolTip": "WebApiCaso\\Services\\IniciativeService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA4AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T22:36:57.426Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
