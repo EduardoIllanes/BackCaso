@@ -16,12 +16,20 @@ internal class Program
         var mongoClient = new MongoClient(Configuration["MongoDbSettings:ConnectionString"]);
         var database = mongoClient.GetDatabase("Caso");
         builder.Services.AddSingleton(database);
+        builder.Services.AddCors(options => options.AddPolicy("Cors", builder =>
+        {
+            builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+        }));
 
         // Colecciones
         var users = database.GetCollection<User>("Users");
         var iniciatives = database.GetCollection<Iniciative>("Iniciatives");
 
-        // Añadir seed
+        // Aï¿½adir seed
 
         if (users.EstimatedDocumentCount() == 0)
         {
@@ -29,7 +37,7 @@ internal class Program
             Console.WriteLine("Datos sembrados exitosamente.");
         }
 
-        // Añadir Serivicios
+        // Aï¿½adir Serivicios
         builder.Services.AddSingleton<UserService>();
         builder.Services.AddSingleton<IniciativeService>();
 
@@ -48,23 +56,12 @@ internal class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-
-        //app.UseHttpsRedirection();
         app.UseAuthorization();
         app.UseRouting();
-        app.UseCors("AllowOrigin");
+        //app.UseHttpsRedirection();
         app.MapControllers();
-
+        app.UseCors("AllowAnyOrigin");
         app.Run();
     }
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddCors(options =>
-        {
-            options.AddPolicy(name: "AllowOrigin", builder =>
-            {
-                builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod();
-            });
-        });
-    }
+    
 }

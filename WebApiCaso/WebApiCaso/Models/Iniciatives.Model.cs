@@ -13,6 +13,9 @@ namespace WebApiCaso.Models
             [BsonElement("Name")]
             public string Name { get; set; }
 
+            [BsonElement("Title")]
+            public string Title { get; set; }
+
             [BsonElement("Description")]
             public string Description { get; set; }
 

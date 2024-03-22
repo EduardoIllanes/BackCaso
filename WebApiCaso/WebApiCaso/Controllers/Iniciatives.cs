@@ -7,8 +7,8 @@ namespace WebApiCaso.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [EnableCors("AllowOrigin")]
-    public class IniciativesController : Controller
+    [EnableCors("Cors")]
+    public class IniciativesController : ControllerBase
     {
         private readonly IniciativeService _iniciativesService;
         private readonly UserService _userService;

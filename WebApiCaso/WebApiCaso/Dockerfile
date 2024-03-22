@@ -18,7 +18,7 @@ COPY . /source
 
 WORKDIR /source
 
-# This is the architecture you’re building for, which is passed in by the builder.
+# This is the architecture youï¿½re building for, which is passed in by the builder.
 # Placing it here allows the previous steps to be cached across architectures.
 ARG TARGETARCH
 
@@ -52,5 +52,7 @@ COPY --from=build /app .
 # See https://docs.docker.com/go/dockerfile-user-best-practices/
 # and https://github.com/dotnet/dotnet-docker/discussions/4764
 USER $APP_UID
+
+EXPOSE 8080
 
 ENTRYPOINT ["dotnet", "WebApiCaso.dll"]
