@@ -17,9 +17,14 @@ namespace WebApiCaso.Services
         }
         public async Task<List<Iniciative>> GetAsync() =>
             await _iniciativesCollection.Find(_ => true).ToListAsync();
+        
+        public async Task<Iniciative?> GetAsync(string title) =>
+        await _iniciativesCollection.Find(x => x.Title == title).FirstOrDefaultAsync();
 
         public async Task CreateAsync(Iniciative newIniciative) =>
            await _iniciativesCollection.InsertOneAsync(newIniciative);
+        public async Task RemoveAsync(string title) =>
+            await _iniciativesCollection.DeleteOneAsync(x => x.Title == title);
     }
     
 }

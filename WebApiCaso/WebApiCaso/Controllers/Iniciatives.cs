@@ -40,5 +40,19 @@ namespace WebApiCaso.Controllers
 
             return CreatedAtAction(nameof(Get), new { id = newIniciative.Id }, newIniciative);
         }
+        [HttpDelete("{title}")]
+        public async Task<IActionResult> Delete(string title)
+        {
+            var iniciative = await _iniciativesService.GetAsync(title);
+
+            if (iniciative is null)
+            {
+                return NotFound();
+            }
+
+            await _iniciativesService.RemoveAsync(iniciative.Title);
+
+            return NoContent();
+        }
     }
 }
