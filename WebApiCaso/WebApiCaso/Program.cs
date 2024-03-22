@@ -21,8 +21,7 @@ internal class Program
             builder
             .AllowAnyOrigin()
             .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowAnyMethod();
+            .AllowAnyHeader();
         }));
 
         // Colecciones
